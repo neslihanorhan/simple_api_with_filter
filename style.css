@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	background-color: #F8F9FD;
+	font-family: 'Muli', sans-serif;	
+}
+
+input:focus, textarea:focus, select:focus {
+	outline: none;
+}
+
+.container {
+	width: 300px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+.header {
+	background-color: #3E57DB;
+	color: #fff;
+	padding: 30px 20px;
+}
+
+.title {
+	margin: 0;
+}
+
+.subtitle {
+	opacity: 0.8;
+	display: inline-block;
+	margin: 5px 0px 20px;
+}
+
+.header input {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	border: 0;
+	border-radius: 50px;
+	font-size: 14px;
+	font-family: 'Muli', sans-serif;
+	padding: 10px 15px;
+}
+
+.users-list {
+	max-height: 400px;
+	background-color: #fff;
+	list-style-type: none;
+	overflow-y: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.users-list li {
+	display: flex;
+	padding: 20px;
+}
+
+.users-list li:not(:last-of-type) {
+	border-bottom: 1px solid #eee;
+}
+
+.users-list li.hide {
+	display: none;
+}
+
+.users-list li img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.user-info {
+	margin-left: 10px;
+}
+
+.user-info h4 {
+	margin: 0 0 10px;
+}
+
+.user-info p {
+	font-size: 12px;
+}
